@@ -148,6 +148,10 @@ kotlin:
   depends_on:
     - ktor
 
+perl:
+  depends_on:
+    - mojolicious
+
 router.cr:
   commands:
     - docker build -t router.cr .
@@ -562,3 +566,8 @@ ktor:
   commands:
     - docker build -t ktor .
   dir: kotlin/ktor
+
+mojolicious:
+  commands:
+    - docker build -t mojolicious .
+  dir: perl/mojolicious
